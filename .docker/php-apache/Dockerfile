@@ -1,4 +1,4 @@
-FROM php:7.4.1-apache
+FROM php:8.0.11-apache
 
 # Копирование фалов проекта
 COPY ./../../ /var/www/html
@@ -11,3 +11,5 @@ RUN apt-get update
 
 # Установка и активация расширения pdo_mysql
 RUN docker-php-ext-install pdo_mysql
+
+RUN a2enmod rewrite

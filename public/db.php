@@ -1,6 +1,7 @@
 <?php
 
 require_once '../vendor/autoload.php';
+require_once '../config/dotenv.php';
 require_once '../config/eloquent.php';
 
 /** @var $capsule */

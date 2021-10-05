@@ -1,10 +1,10 @@
 <?php
 
 require_once '../vendor/autoload.php';
-require_once '../config/eloquent.php';
+require_once '../config/dotenv.php';
 require_once '../config/blade.php';
+require_once '../config/router.php';
+require_once '../config/eloquent.php';
 
-$title = 'Абракадабра';
-
-/** @var $blade \Illuminate\View\Factory */
-echo $blade->make('pages.home', ['title' => $title])->render();
+$response = $router->dispatch($request);
+echo $response->getContent();
