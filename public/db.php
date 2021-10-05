@@ -38,6 +38,6 @@ $blueprint->foreignId('post_id');
 $blueprint->foreignId('tag_id');
 $blueprint->timestamps();
 $blueprint->create();
-$blueprint->foreign('post_id')->references('id')->on('posts');
-$blueprint->foreign('tag_id')->references('id')->on('tags');
+$blueprint->foreign('post_id')->references('id')->on('posts')->cascadeOnDelete()->cascadeOnUpdate();
+$blueprint->foreign('tag_id')->references('id')->on('tags')->cascadeOnDelete()->cascadeOnUpdate();
 $blueprint->build($capsule->getConnection(), new Illuminate\Database\Schema\Grammars\MySqlGrammar());

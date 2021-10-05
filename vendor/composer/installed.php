@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'e8d0b7f514ebc1335ebda46c5da771b920fc12ca',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'e8d0b7f514ebc1335ebda46c5da771b920fc12ca',
             'dev_requirement' => false,
         ),
         'doctrine/inflector' => array(
@@ -82,6 +82,15 @@
             'reference' => '7def78033f29cd0c0383513b27c291d233a7f90e',
             'dev_requirement' => false,
         ),
+        'illuminate/filesystem' => array(
+            'pretty_version' => 'v8.62.0',
+            'version' => '8.62.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../illuminate/filesystem',
+            'aliases' => array(),
+            'reference' => 'f33219e5550f8f280169e933b91a95250920de06',
+            'dev_requirement' => false,
+        ),
         'illuminate/macroable' => array(
             'pretty_version' => 'v8.60.0',
             'version' => '8.60.0.0',
@@ -107,6 +116,15 @@
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(),
             'reference' => 'c0fbc05c4362de423a7a4da137098e9d1affaf54',
+            'dev_requirement' => false,
+        ),
+        'illuminate/view' => array(
+            'pretty_version' => 'v8.62.0',
+            'version' => '8.62.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../illuminate/view',
+            'aliases' => array(),
+            'reference' => '875ca9f548b17e1a225469e0b0f8bae3c9e4ff71',
             'dev_requirement' => false,
         ),
         'nesbot/carbon' => array(
@@ -164,6 +182,15 @@
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
             'reference' => '5f38c8804a9e97d23e0c8d63341088cd8a22d627',
+            'dev_requirement' => false,
+        ),
+        'symfony/finder' => array(
+            'pretty_version' => 'v5.3.7',
+            'version' => '5.3.7.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/finder',
+            'aliases' => array(),
+            'reference' => 'a10000ada1e600d109a6c7632e9ac42e8bf2fb93',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(

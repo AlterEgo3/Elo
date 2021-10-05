@@ -6,6 +6,7 @@
   },
   "require": {
     "illuminate/database": "^8.60",
-    "illuminate/events": "^8.60"
+    "illuminate/events": "^8.60",
+    "illuminate/view": "^8.62"
   }
 }
