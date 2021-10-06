@@ -15,4 +15,16 @@ class Category extends Model
     {
         return $this->hasMany(Post::class);
     }
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($category) {
+            $uncategorized = Category::firstOrCreate(['title' => 'Uncategorized', 'slug' =>
+                'uncategorized']);
+            Post::where('category_id', $category->id)->update(
+                ['category_id' => $uncategorized->id]);
+        });
+    }
 }
