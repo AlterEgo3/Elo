@@ -4,6 +4,8 @@ require_once '../vendor/autoload.php';
 require_once '../config/eloquent.php';
 require_once '../config/blade.php';
 
+use \Hillel\Models;
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $categories = [];
 
@@ -15,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     foreach ($categories as $category) {
-        \Hillel\Models\Category::create($category);
+        Models\Category::create($category);
     }
 
     $posts = [];
